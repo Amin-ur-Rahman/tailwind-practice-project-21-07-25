@@ -1,17 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="styles/tailwind.css">
+    <link rel="stylesheet" href="styles/tailwind.css" />
+    <title>Silence Before Storm</title>
+  </head>
+  <body>
+    <div class="main-container md:w-[80dvw] font-EB mx-auto p-5 sm:p-0">
+      <header class="py-5 lg:py-10">
+        <nav class="flex max-[1024px]:flex-col min-[1025px]:flex-row justify-between items-center">
+           <div class="flex items-center">
+                <img src="legal-solution-resources/images/logo2.png" alt="symbol of justice" class="block mb-5">
+            </div>
+            
+            <ul class="flex gap-8 text-[rgba(0,0,0,0.5)] [word-spacing:0.16rem] mb-5">
+                <li>Home &#10095</li>
+                <li>Services &#10095</li>
+                <li>Cases &#10095</li>
+                <li>Blog &#10095</li>
+                <li>Contact us &#10095</li>
+            </ul>
+            <button type="button" class="bg-[#B68C5A] px-[1.5rem] py-[1rem] text-white font-semibold rounded-[8px] mb-5">Free Consultation</button>
+        </nav>
 
-</head>
-<body>
-    <div class="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, odio?
+        <div class="border-2 border-amber-400 bg-[url(legal-solution-resources/images/banner.png)] w-full rounded-lg 
+              h-auto bg-no-repeat bg-cover bg-center">
+          <div id="overlay" class="w-full h-full bg-linear-to-b from-[rgba(0,0,0,0.1)] to-[rgba(0,0,0,0.8)]
+                                    md:p-16">
+            <div class="lg:w-[60%] mx-auto xl:px-8 xl:py-6 text-center">
+              <h1 class="font-bold text-[clamp(2.5rem,4dvw,4rem)] text-white">We Provide Effective Legal Solutions</h1>
+              <p class="text-white my-5">
+                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+              </p>
+               <div class="flex flex-col lg:flex-row gap-[1.5rem] w-full py-[2dvw] ">
+                    <input type="search" name="search" id="search" placeholder="search your desired services" 
+                        class="border-1 border-black rounded-[5px] px-1.5rem py-[1rem] bg-[#ffffff] flex-1">
+                     <button type="button" class="bg-[#B68C5A] px-[2rem] py-[1rem] text-white  font-semibold rounded-[8px]
+                                [word-spacing:0.25rem] ">Search</button>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </header>
     </div>
-</body>
+  </body>
 </html>
